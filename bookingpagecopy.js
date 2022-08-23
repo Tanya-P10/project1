@@ -56,7 +56,7 @@ function store(){
     
 
 }
-
+//to store values of new passenger
 function storeNew(){
   var fname1=document.getElementById("firstName1").value;
   localStorage.setItem("firstName1",fname1);
@@ -68,7 +68,7 @@ function storeNew(){
   localStorage.setItem("age1",age1);
 
 
-  var gen1 = document.getElementById("rad1").value;
+
     var gender_value1;
     var gender1;
 
