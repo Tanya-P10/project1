@@ -36,7 +36,6 @@ function store() {
   var pnumber = document.getElementById("phoneNumber").value;
   localStorage.setItem("phoneNumber", pnumber);
 
-
   var gender_value;
   var gender;
 
@@ -54,6 +53,8 @@ function store() {
   }
   gender = localStorage.setItem("gender", gender_value);
 
+  document.getElementById('box').style.height='820px';
+
 
 }
 //to store values of new passenger
@@ -66,8 +67,6 @@ function storeNew() {
 
   var age1 = document.getElementById("age1").value;
   sessionStorage.setItem("age1", age1);
-
-
 
   var gender_value1;
   var gender1;
@@ -93,6 +92,7 @@ function showAddPassenger() {
   if (document.getElementById('addPassenger').checked) {
     document.getElementById('form1').style = "display:true";
     document.getElementById('button1').style.display = 'none';
+    document.getElementById('box').style.height='1120px';
 
 
 
@@ -100,6 +100,7 @@ function showAddPassenger() {
   else {
     document.getElementById('form1').style.display = 'none';
     document.getElementById('button1').style = "display:true";
+    document.getElementById('box').style.height='670px';
 
   }
 }

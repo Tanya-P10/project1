@@ -9,7 +9,7 @@ width:50px;
 height: 50px;
 margin-left: 16px;
 margin-right: 10px;
-margin-bottom:10px;
+margin-bottom:28px;
 }
 
 
@@ -26,11 +26,10 @@ nav{
 nav #Logo, nav #siteName, nav #navbar{
     display:inline;
 }
+
 #siteName{
-    margin-top:20px;
+   font-size: 45px;
 }
-
-
 
 #navbar{
     margin-top:20px;
@@ -51,7 +50,7 @@ nav #Logo, nav #siteName, nav #navbar{
 }
 
 #navbar li a:hover{
-    color:aliceblue;
+    color:whitesmoke;
 }
 
 .card{
@@ -74,26 +73,26 @@ h2{
 }
 
 .box{
-    background-image: url('/images/plane1.jpg') ;
-     background-attachment: fixed;
+    background-image: url('/images/plane3.jpg') ;
+    background-attachment: fixed;
     background-size: cover
 }
 
 #card-collection .card{ 
     
     display:inline-block;
-    animation: slideleft 0.5s linear forwards;
+    animation: slideup 0.5s linear forwards;
    
 }
-@keyframes slideleft {
+@keyframes slideup {
 
     0% {
-        transform: translate(70px);
+        transform: translateY(16px);
         opacity: 0;
     }
 
     100% {
-        transform: translate(0px);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
